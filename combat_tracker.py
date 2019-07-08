@@ -55,7 +55,7 @@ cur_hp = int(cur_hp)
 com_status = True
 
 while com_status:
-    action = input('Heal(g) -- Damage(l) -- End Combat(f)')
+    action = input('Heal(g) -- Damage(l) -- End Combat(f)' + '\n'*5)
 
     if action == 'g':
         g_var = input('How many points do you gain?')
@@ -67,9 +67,13 @@ while com_status:
         print('Ok, next again...')
 
     elif action == 'l':
-        l_var = input('How many points did you looe?')
+        l_var = input('How many points did you loose?')
         l_var = int(l_var)
+        # print(l_var, cur_hp)
         cur_hp = cur_hp - l_var
+        # print(cur_hp, type(max_hp))
+        # print('type of cur_hp: ', type(cur_hp))
+        # input('Press enter to continue...')
         if cur_hp < 1 and cur_hp > -3 * max_hp:
             print('You are down, get ready for some saving throws!')
 
