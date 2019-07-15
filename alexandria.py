@@ -67,7 +67,8 @@ def stats():
             f.write(handle + '\n')
 
 
-        print('Oh,', handle, 'sound almost dirty when you say it like that.\n'
+        print('Oh,', handle, 'sound almost dirty when you say it like '
+              'that.\n'
               'Lets\'s get intimate.')
         max_hp = input ('What is your maximum HP?')
         max_hp = int(max_hp)
