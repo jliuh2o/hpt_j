@@ -1,6 +1,8 @@
-#!/usr/bin/env python
+#Dis Thang contains my fxns
 
-#Establishing player stats categories.
+#This function collects character data and stores them in a file.
+#It should be run as soon as the library is imported to establish base 
+#conditions.
 
 def stats():
 
@@ -93,7 +95,14 @@ def stats():
 
 #           HP Calculator here
 
-def hp_calc():
+def hp_calc(cstats):
+
+    handle = cstats['character_name']
+    max_hp = cstats['maximum_hp']
+    cur_hp = cstats['current_hp']
+
+
+
     com_status = True
 
     while com_status:
@@ -132,4 +141,19 @@ def hp_calc():
         else:
             print('That is an invalid input!'
                     'Try again...')
+
+    cstats['current_hp'] = cur_hp
+
+
+def combat_mop_up(cstats):
+
+    handle = cstats['character_name']
+    max_hp = cstats['maximum_hp']
+    cur_hp = cstats['current_hp']
+
+    with open(handle + '.stats.txt', 'w') as f:
+
+        f.write(handle + '\n' + str(max_hp) + '\n' + str(cur_hp) 
+                + '\n')
+
 
