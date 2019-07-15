@@ -93,7 +93,13 @@ def stats():
 
 #           HP Calculator here
 
-def hp_calc():
+def hp_calc(cstats):
+
+    max_hp = cstats['maximum_hp']
+    cur_hp = cstats['current_hp']
+
+
+
     com_status = True
 
     while com_status:

@@ -80,7 +80,6 @@ def stats():
 
         
         print('Now we can begin, muahahahahha.')
-        # Begin combat tracking with combat menu
 
 
     else:
@@ -125,10 +124,10 @@ def hp_calc(cstats):
             # print(cur_hp, type(max_hp))
             # print('type of cur_hp: ', type(cur_hp))
             # input('Press enter to continue...')
-            if cur_hp < 1 and cur_hp > -3 * max_hp:
+            if cur_hp < 1 and cur_hp > -2 * max_hp:
                 print('You are down, get ready for some saving throws!')
 
-            elif cur_hp < -3 * max_hp + 1:
+            elif cur_hp < -2 * max_hp + 1:
                 print('You dead!')
                 break
             print(handle, '-- HP:', cur_hp, '/', max_hp)
