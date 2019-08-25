@@ -93,14 +93,14 @@ while com_status:
 
     elif action == '3':
 
-        spell_lvl = input('What spell level do you cast at?(0-9)')
+        spell_lvl = input('What level spell slot do you burn?(0-9)')
         spell_lvl = int(spell_lvl)
 
         if spell_lvl < 1:
             print('Oh, it\'s just a Cantripppppffff.  Whateves.')
 
         elif spell_lvl > 0:
-            #open a file to track this?
+            
 
         spell_dur = input('How many turns does you spell last?\n'
                           'Just put in 0 for instantaneous, smarty pants!')
