@@ -1,10 +1,17 @@
 import unittest
 
-class TesTicles(unittest.TestCase):
+hp_stats = {
+		    'max_hp': '100',
+		    'cur_hp': '50',
+		    }
 
-	def test_ticular_torsion(self):
+# class Test_hp_calc(unittest.TestCase):
 
-		self.assertTrue(True)
+# 	def test_hp(self):
+
+# 		self.assertTrue(True)
+
+
 
 if __name__ == '__main__':
 
